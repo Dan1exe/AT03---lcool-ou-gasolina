@@ -30,16 +30,16 @@ class MainActivity : AppCompatActivity() {
 
             when (percentual) {
                 0.7 -> {
-                    resultado = gasolina * 0.7 - alcool
-                    mensagem = if (resultado < 0) {
-                        "Abasteça com Gasolina"
-                    } else {
+                    resultado = gasolina * 0.7
+                    mensagem = if (resultado > alcool) {
                         "Abasteça com Álcool"
+                    } else {
+                        "Abasteça com Gasolina"
                     }
                 }
                 0.75 -> {
-                    resultado = gasolina - alcool * 0.75
-                    mensagem = if (resultado < 0) {
+                    resultado = gasolina * 0.75
+                    mensagem = if (resultado > alcool) {
                         "Abasteça com Álcool"
                     } else {
                         "Abasteça com Gasolina"
