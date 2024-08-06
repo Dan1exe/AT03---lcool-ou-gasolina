@@ -22,11 +22,16 @@
             <item name="android:backgroundTint">@color/teal_200</item>
         </style>
 
-        <style name="TEXTCOLOR">
+        <style name="TEXT">
+            <item name="android:textColor">@color/white</item>
+        </style>
+        <style name="TEXT2">
             <item name="android:textColor">@color/black</item>
         </style>
 
-        <style name="BOTAO">
+        <style name="BOT">
             <item name="android:backgroundTint">@color/gray</item>
+            <item name="android:textColor">@color/white</item>
         </style>
+
 </resources>
